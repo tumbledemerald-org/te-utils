@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo apt install binutils-arm-none-eabi build-essential git libpng-dev -y
 git clone https://github.com/tumbledemerald-org/tumbledemerald.git
-git clone https://github.com/pret/agbcc.git
+cd tumbledemerald
 cd agbcc
 ./build.sh
 ./install.sh ../tumbledemerald
