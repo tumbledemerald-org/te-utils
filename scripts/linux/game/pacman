@@ -1,0 +1,10 @@
+#!/bin/sh
+sudo pacman -S arm-none-eabi-binutils base-devel libpng git
+git clone https://github.com/tumbledemerald-org/tumbledemerald.git
+git clone https://github.com/pret/agbcc
+cd agbcc
+./build.sh
+./install.sh ../tumbledemerald
+cd ../tumbledemerald
+make
+echo "done"
